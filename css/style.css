@@ -24,39 +24,48 @@ header .top {
     display:block ;
     height: 105px;
     background-color: #fff;
+    margin: 0 auto;
 }
 header .logo{
     float: left;
     margin: 23px 35px 23px 147px;
 }
-header span{
-    display: inline-flex;
-    font-size: 13px;
+header .key{
     width: 87px ;
     height: 40px;
-    margin: 34px 0 34px 27px;
+    float: left;
+    margin-top: 20px;
+}
+header .key p{
+    font-size: 13px;
     color: #9999;
 }
-
-header .top nav ul{
-    list-style: none;
+header .top nav{
+    width: 617px;
+    height: 73px;
+    padding-top: 31px;
     float: right;
     margin-right: 40px;
-    position: inherit;
+}
+header .top nav ul{
+    list-style: none;
 }
 header nav li {
-    display: inline;
-    padding: 30px 17px;
+    float: left;
 }
-.top ul li.active{
+.top ul li.active a{
     color: #fff;
     background-color: #f75a53;
     border-radius: 10% 10% 0 0;
 }
-header nav a{ 
+header nav li a{ 
+    width: 88px;
+    height: 73px;
+    text-align: center;
     text-decoration: none;
+    line-height: 73px;
     color: black;
-    display: inline;
+    display: block;
     font-size: 13px;
 } 
 
@@ -66,10 +75,13 @@ header nav a{
     display: block;
     height: 450px;
     margin: 0 auto;
+    padding-bottom: 0;
 }
-#banner .im-1{
+#banner img{
     display: block;
-    width: fit-content;
+    width: 100%;
+    max-height: 450px ;
+    padding-bottom: -5px;
 }
 
 /* 合作夥伴 */
@@ -113,13 +125,15 @@ header nav a{
     height: 260px;
     background-color: #d0d0d2;
     vertical-align:  baseline;
-    z-index: -5;
+    position: relative;
+    z-index: 5;
 }
 #advantages .adv-items img{
-    width: 150px;
-    align-items: center;
-    vertical-align: baseline;
-    margin: 0 auto;
+    display: grid;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 60px;
     z-index: +10;
 }
 #advantages h4{
@@ -139,17 +153,19 @@ header nav a{
 #case{
     display: block;
     height: 810px ;
-    background-color: blueviolet;
+    background-color: #fff;
 }
 #case ul{
+    display: inline-flex;
     list-style: none;
-    margin: 34px auto;
+    margin-top: 34px;
+    padding-left: 30%;
     align-items: center;
 }
 #case .fliter{
     display: inline;
     font-size: 13px;
-    color: #fff;
+    
     padding: 14px 73px;
     background-color:#666666 ;
 }
@@ -165,12 +181,18 @@ header nav a{
     margin: 25px auto 59px auto;
     gap: 28px;
 }
-#case ul{
-    display: block;
-}
 #case li{
     font-size: 9px;
 }
+#case a{
+    text-decoration: none;
+    color: #fff;
+}
+#case .fliter.active {
+    color: #fff;
+    background-color: #f75a53;
+}
+
 #case .date{
     font-size: 9px;
     color: #99999b;
@@ -178,7 +200,7 @@ header nav a{
 /* 新聞 */
 #news{
     height: 351px ;
-    background-color: bisque;
+    background-color: #f2f2f2;
     display:block;
 }
 #news .ne-wrap{
@@ -197,28 +219,25 @@ header nav a{
     margin: 36px 0;
 }
 #news ul{
-    display: block;
-    width: 340px;
     list-style: none;
     float: left;
     padding-left: 0;
 }
-#news li{
-    text-align: justify;
+#news ul li{
     font-size: 12px;
+    height: 20px;
     color: #878986;
-    
+    float: left;
 }
-#news .date span{
-    float:right;
-    text-align: justify;
-}
-#news a{
-    display: inline-flex;
+#news .new-row ul li a{
     text-decoration: none;
     float: left;
-    line-height: 15px;
 }
+#news .new-row  ul li span{
+    display: inline-flex;
+    float: right;
+}
+
 #news .btn{
     background-color: #f75a53;
     font-size: 11px;
@@ -230,13 +249,14 @@ header nav a{
 }
 /* 底部資訊 */
 footer{
-    height: 138px ;
+    height: 120px ;
+    padding-top:10px ;
     background-color:#363636;
 }
-footer ul{
+footer .ft-ul{
     display: inline-block;
     list-style: none;
-    margin: 30px 33% 0 33%;
+    margin: 20px 33% 0 33%;
 }
 footer li{
     display: inline-flex;
@@ -251,4 +271,7 @@ footer a{
 footer ul .last {
     padding-right: 0;
     border: 0;
+}
+footer .detail{
+    margin-bottom: 38px;
 }
