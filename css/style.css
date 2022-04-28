@@ -18,6 +18,12 @@ p{
 }
 ul{
     list-style: none;
+
+}
+.content{
+    display: block;
+    max-width: 1139px;
+    align-items: center;
 }
 /* 導航列 */
 header .top {
@@ -28,24 +34,24 @@ header .top {
 }
 header .logo{
     float: left;
-    margin: 23px 35px 23px 147px;
+    margin: 23px 35px 23px 0;
 }
 header .key{
     width: 87px ;
     height: 40px;
     float: left;
-    margin-top: 20px;
+    margin-top: 33px;
 }
-header .key p{
+header .top .key p{
     font-size: 13px;
     color: #9999;
+    padding-top: 0;
 }
 header .top nav{
-    width: 750px;
+    width: 662px;
     height: 73px;
     padding-top: 31px;
     float: right;
-    margin-right: 40px;
 }
 header .top nav ul{
     list-style: none;
