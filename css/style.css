@@ -41,7 +41,7 @@ header .key p{
     color: #9999;
 }
 header .top nav{
-    width: 617px;
+    width: 750px;
     height: 73px;
     padding-top: 31px;
     float: right;
@@ -57,6 +57,7 @@ header nav li {
     color: #fff;
     background-color: #f75a53;
     border-radius: 10% 10% 0 0;
+    border-bottom: 6px solid #f75a53;
 }
 header nav li a{ 
     width: 88px;
